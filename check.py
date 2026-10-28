@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 import subprocess
 import argparse
-from tqdm import tqdm
 import os
+
+try:
+    from tqdm import tqdm
+except ImportError:
+    def tqdm(iterable, *args, **kwargs):
+        return iterable
 
 '''
 check.py
