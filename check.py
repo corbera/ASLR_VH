@@ -108,7 +108,7 @@ def main():
         print("Checking part 3...")
         points_possible += 10
         os.chdir('part3')
-        if check("part3", 100, b"DAC{and_thats_all_folks!}", 0.40):
+        if check("part3", 100, b"DAC{and_thats_all_folks!}", 0.20):
             points += 10
     
     print(f"Your score is {points} / {points_possible}")
